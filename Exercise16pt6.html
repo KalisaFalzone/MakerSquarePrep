@@ -1,0 +1,28 @@
+<html><head>
+  <style>
+
+  </style>
+
+
+</head><body>
+  
+  <div id="x"></div>
+
+  <script src='http://code.jquery.com/jquery-2.1.1.js'></script>
+  <script>
+var thisThat = function(word1, word2) {
+  for(var i=1; i <100; i++){
+    if (i % 15 === 0) {
+      $('#x').append(word1 + word2);
+    } else if (i % 3 === 0 && i % 15 !== 0) {
+      $('#x').append(word1);
+    } else if (i % 5 === 0 && i % 15 !== 0) {
+      $('#x').append(word2); 
+    } else {
+      $('#x').append(i);
+    }
+  }
+};
+  </script>
+</body>
+</html>

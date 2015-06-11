@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <span id="image"></span>
+  <strong><span id="message"> </span></strong>
+<script>
+var d = new Date(); 
+var hours = d.getHours();
+
+if (hours <12) {
+  alert("Good Morning!");
+  document.querySelector("img").HTMLContent = "http://cupegraf.com/data_images/wallpapers/9/319811-day.jpg";
+} else if (hours === 12) {
+  var lunch = prompt("What shall we have for lunch?")
+  document.querySelector("#message").textContent = "Yum I love " + lunch + "!";
+} else {
+  document.querySelector("#message").textContent = "Have a nice day!";
+  document.querySelector("image").HTMLContent = "<img src='http://www.seeds4thesoul.com/wp-content/uploads/2015/03/night-wallpaper.jpg'>";
+};
+
+</script>
+</body>
+</html>

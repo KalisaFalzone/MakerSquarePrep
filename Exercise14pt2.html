@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)file:///Users/kalisafalzone/Programming/MakerSquare/JuneClass/Exercise13pt4.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<style>
+.even {
+  font-weight: bolder;
+  color: #FF0000;
+}
+
+.odd {
+  color: #0000FF;
+}
+</style>
+</head>
+<body>
+  <div id="target"></div>
+<script>
+
+n = 1
+newstring = ''
+while (n <=9) {
+  if(n<=8) {
+    if (n % 2 === 0) {
+      newstring += "<p><div class='even'>" + n + "</div><hr></p>"
+    } else {
+      newstring += "<p><div class='odd'>" + n + "</div><hr></p>"
+    };
+  } else {
+    newstring += "<div class='odd'>" + n + "</div>"
+  };
+  n++
+};
+
+document.querySelector("#target").innerHTML = newstring
+
+</script>
+
+</body></html>

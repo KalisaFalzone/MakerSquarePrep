@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)file:///Users/kalisafalzone/Programming/MakerSquare/JuneClass/Exercise13pt4.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</head>
+<body>
+  <div id="greeting"></div>
+<script>
+var name = prompt ("Please enter your name", "Kalisa")
+var age = prompt ("Please enter your age", "30")
+var gender = prompt ("Please enter your gender: M/F", "F")
+var isMember = prompt ("Are you a member? Y/N", "Y")
+
+if (gender === "M") {
+  membergreeting = "Mr.";
+  nonmembergreeting = "Sir";
+} else {
+  membergreeting = "Mrs.";
+  nonmembergreeting = "Ma'am";
+};
+
+if (isMember === "N" || age < 21) {
+    document.querySelector("#greeting").textContent = "I'm sorry " + nonmembergreeting + " you do not have access";
+};
+
+if (isMember === "Y" && age >= 21) {
+  var thirsty = confirm("Are you thirsty?");
+  if (thirsty) {
+    var drink = prompt("What would you like to drink?")
+    if (drink === "Coors Light"){
+      alert("You are kicked out!");
+      isMember = "N"
+    } else {
+      alert("One " + drink + " coming right up!")
+    };
+  }
+};
+
+if (isMember === "Y")
+document.querySelector("#greeting").textContent = "Welcome " + membergreeting + " " + name + "!";
+
+
+
+
+</script>
+
+</body></html>

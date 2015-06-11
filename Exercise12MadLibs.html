@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <span id="name"></span><span id="place"></span><span id="month"></span><span id="adj1"></span> <span id="noun1"></span><span id="noun2"></span><span id="adj2"></span><span id="sound1"></span><span id="adverb1"></span>
+  <script>
+  var name = prompt("What is your name?");
+  
+  var place = prompt('Where does this story take place?');
+  var month = prompt('Give me a month.');
+  var adj1 = prompt('Give me an adjective.');
+  var noun1 = prompt('Give me a singular noun.');
+  var noun2 = prompt('Give me a plural noun.');
+  var adj2 = prompt('Give me another adjective');
+  var sound1 = prompt('Give me a sound');
+  var adverb1 = prompt('Give me an adverb.');
+  
+
+  document.querySelector("#name").textContent = "Welcome " + name + "! Tell me about your adventures in ";
+  
+  document.querySelector("#place").textContent = place + " last ";
+  document.querySelector("#month").textContent = month + ". I heard that you found a very ";
+  document.querySelector("#adj1").textContent = adj1;
+  document.querySelector("#noun1").textContent = noun1 + " hiding under ";
+  document.querySelector("#noun2").textContent = noun2 + ". How ";
+  document.querySelector("#adj2").textContent = adj2 + '! You were able to coax it out by repeating "';
+  document.querySelector("#sound1").textContent = sound1 + '" to it ';
+  document.querySelector("#adverb1").textContent = adverb1 +".";
+  
+
+ </script>
+
+</body>
+</html>
+
+
+<!-- Exercise 12
+
+Create a <div> with an id of "welcome-message" on your web page.
+Prompt the user to enter their name. Set the response equal to a variable "visitorName". Create a nice welcome message on the page using querySelector and textContent.
+Put a <span> with the id of "hometown" on the page, prompt the user for their hometown, and use their answer and the "hometown" span to let them know how nice it is to have a visitor from that place.
+Create a <div> with an id of "from-div", and one with the id of "to-div". Take the text content of "from-div", and place it in "to-div".
+Create a "Mad Libs" web page. It should tell a story, leaving empty <spans>'s with id attributes of 'noun1', 'adjective2', 'verb3', etc. Practice using the console along with `querySelector` and `textContent` to fill in the missing information one at a time.
+After doing this manually, put these operations into a script tag, and use variables to store each piece of information before placing it into the web page, so that the template will be filled out automatically each time the page loads, but the information will be easy to change later.
+Finally, prompt the visitor repeatedly to provide their own mad libs words. Save their responses as variables and then place those variables into the page to make a crazy story for them. -->

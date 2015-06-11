@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<p> Hello </p>
+</head>
+<body>
+<script>
+var a = 1;
+var b = 2;
+var c = 3;
+var d = a + b + c
+
+var timeNow = new Date();
+var hourNow = timeNow.getHours();
+var minuteNow = timeNow.getMinutes();
+
+var minutesToMidnight = function(hourNow, minuteNow){
+  return((24-hourNow)*60 - 60 +minuteNow+ " minutes to midnight");
+};
+
+console.log(minutesToMidnight(hourNow, minuteNow));
+
+var name = "Kalisa"
+var age = "30"
+var hometown = "Los Angeles"
+var birthday = "June 21st"
+var favoriteFood = "sushi"
+var favoritePet = "Pennie"
+
+console.log("Hello, my name is " + name + ". I am " + age + " years old. I live in " + hometown + ". My birthday is " + birthday + ". My favorite food is " + favoriteFood + ", and my favorite pet is " + favoritePet+ "!")
+</script>
+</body>
+</html>
+
+<!-- Exercise 11
+
+Declare variables a, b and c. Assign each a number.
+Declare variable d and assign it the value of a, b, and c added together.
+Re-assign the value of b to a. Then change the value of b. What is the value of a?
+Create variables "hourNow" and "minuteNow". Write an expression to calculate how many seconds until midnight. Change "minuteNow" to be accurate again as time has probably passed. Run your calculation again (press the up key in the console to scroll back to it).
+Declare at least 10 variables such as 'name', 'age', 'birthday', 'hometown', 'occupation', 'favoriteFood', etc, and set their values equal to strings containing the appropriate information about yourself.
+console.log a paragraph about yourself using the appropriate variables to insert the relevant information in the appropriate places. -->

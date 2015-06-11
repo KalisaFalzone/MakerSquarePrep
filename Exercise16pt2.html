@@ -1,0 +1,34 @@
+<html><head>
+  <style>
+  #adjective {
+    color: red;
+  }
+
+  #verb {
+    color: purple;
+  }
+
+  #noun {
+    color: blue;
+  }
+
+  #adverb {
+    color: green;
+  }
+
+  </style>
+
+
+</head><body>
+  
+  <div id="funnySentence"></div>
+
+  <script src='http://code.jquery.com/jquery-2.1.1.js'></script>
+  <script>
+  var funnySentence = function(noun, adjective, verb, adverb){
+    $('#funnySentence').html("I am so <span id=adjective>" + adjective + "</span> I <span id='verb'>" + verb + " </span><span id='noun'>" + noun +"s </span><span id='adverb'>" + adverb + "</span> all the time.");
+  };
+
+  </script>
+</body>
+</html>
