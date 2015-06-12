@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <h1><span id='one'>SOME </span><span id='two'>COLORFUL </span>TEXT</h1>
+
+  <script src='http://code.jquery.com/jquery-2.1.1.js'></script>
+  <script>
+    var setColorHex = function(){
+      return '#' + Math.random().toString(16).slice(2, 8);
+    };
+
+    var colorhex = setColorHex;
+
+    var colorchanger = function() {
+      $('body').css('background-color', colorhex);
+      $('#one').css('color', colorhex);
+      $('#two').css('color', colorhex);
+      $('#three').css('color', colorhex);
+    }
+
+var id = setInterval(colorchanger, 1000);
+
+
+  </script>
+</body>
+</html>

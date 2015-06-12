@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <script src='https://code.jquery.com/jquery-2.1.1.js'>
+  </script>
+  <script>
+  var seconds = parseInt(prompt('Please provide a number of seconds')) ;
+
+  var fnToRunLater = function(){
+     console.log("time's up!");
+  };
+
+  setTimeout(fnToRunLater, seconds*1000);
+
+  </script>
+</body>
+</html>

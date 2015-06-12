@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <div id='countdown'></div>
+
+  <script src='https://code.jquery.com/jquery-2.1.1.js'>
+  </script>
+  <script>
+  var secondsstring = prompt('Please provide a number of seconds');
+  var secondsnum = parseInt(secondsstring);
+  var milseconds = secondsnum * 1000;
+
+  var fnToRunLater = function(){
+     $('#countdown').text("time's up");
+  };
+
+  var countdown = function(){
+     $('#countdown').text(secondsnum);
+     secondsnum--;
+     if (secondsnum === 0){
+      clearInterval(id);
+     }
+  };
+
+  var id = setInterval(countdown, 1000);
+  setTimeout(fnToRunLater, milseconds+1000);
+
+
+  </script>
+</body>
+</html>

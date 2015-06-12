@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <h1>SOME BLINKING TEXT</h1>
+
+  <script src='http://code.jquery.com/jquery-2.1.1.js'></script>
+  <script>
+
+    var i = 0;
+
+    var blinker = function() {
+      i === 0 ? i = 1: i = 0;
+      if(i===0){$('h1').css('display', 'none')};
+      if(i===1){$('h1').css('display', 'block')};
+    };
+
+    var id = setInterval(blinker, 300);
+  </script>
+</body>
+</html>
+
